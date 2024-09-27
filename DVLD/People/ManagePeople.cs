@@ -7,19 +7,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using Business;
 namespace DVLD.People
 {
     public partial class ManagePeople : Form
     {
+
         public ManagePeople()
         {
             InitializeComponent();
+            ctrlManage1.TableList = clsPerson.GetAllPeople();
+            ctrlManage1.Title = "Manage People";
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
 
-        }
     }
 }

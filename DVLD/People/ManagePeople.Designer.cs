@@ -1,4 +1,6 @@
-﻿namespace DVLD.People
+﻿using Business;
+
+namespace DVLD.People
 {
     partial class ManagePeople
     {
@@ -28,50 +30,37 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ManagePeople));
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.ctrlManage1 = new DVLD.CtrlManage();
             this.SuspendLayout();
             // 
-            // pictureBox1
+            // ctrlManage1
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(262, 46);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(115, 114);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
-            // label1
-            // 
-            this.label1.Font = new System.Drawing.Font("Tahoma", 18F);
-            this.label1.ForeColor = System.Drawing.Color.Brown;
-            this.label1.Location = new System.Drawing.Point(277, 177);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(100, 23);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "label1";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.ctrlManage1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.ctrlManage1.Location = new System.Drawing.Point(-1, -7);
+            this.ctrlManage1.Name = "ctrlManage1";
+            this.ctrlManage1.Size = new System.Drawing.Size(706, 499);
+            this.ctrlManage1.TabIndex = 0;
+            this.ctrlManage1.TableList = null;
+            this.ctrlManage1.Title = null;
+
             // 
             // ManagePeople
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(640, 471);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.pictureBox1);
+            this.ClientSize = new System.Drawing.Size(698, 489);
+            this.Controls.Add(this.ctrlManage1);
             this.Name = "ManagePeople";
-            this.Text = "ManagePeople";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.Text = "Manage People";
             this.ResumeLayout(false);
 
         }
 
+
         #endregion
 
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label1;
+        private CtrlManage ctrlManage1;
     }
 }
